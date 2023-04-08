@@ -5,7 +5,7 @@ import HomePage from '../Pages/Home/index'
 const RoutesMain = () => {
   <>
     <Routes>
-      <Route index element={<HomePage/>}   />
+      <Route index element={<HomePage/>}/>
     </Routes>
   </>;
 };

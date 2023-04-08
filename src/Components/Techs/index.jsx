@@ -35,8 +35,9 @@ const Techs = () => {
   }
 
   return (
-    <TechsHome>
-      <h2>Tecnologias</h2>
+    <TechsHome id="techs">
+   
+     <h2 id="techs">Tecnologias</h2>
       <div className="allCardsTechs">
         <img className="gradient" src={gradient} alt="" />
         {techsData.map((element) => (

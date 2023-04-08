@@ -8,7 +8,7 @@ const Landing = () => {
 
   
   return (
-    <LandingPage>
+    <LandingPage id="home">
       <motion.div
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}

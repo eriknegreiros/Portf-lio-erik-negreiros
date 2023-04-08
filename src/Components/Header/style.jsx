@@ -21,6 +21,12 @@ export const Header = styled.header`
   li {
     font-family: "Poppins", sans-serif;
     color: white;
+    cursor:pointer;
+  }
+
+  a{
+    text-decoration: none;
+    color: white;;
   }
 
   .menu {
@@ -29,9 +35,10 @@ export const Header = styled.header`
     list-style-type: none;
     margin: 0;
     padding: 0;
+    gap: 20px;
   }
 
-  .menu > li {
+  .menu > li a{
     margin: 0 1rem;
     overflow: hidden;
   }
@@ -100,21 +107,25 @@ export const Header = styled.header`
       width: 100%;
       justify-content: center;
       align-items: center;
+      gap: 0px;
     }
-    #menu-toggle ~ .menu li {
+    #menu-toggle ~ .menu  a {
+      display: none;
       height: 0;
       margin: 0;
       padding: 0;
       border: 0;
       transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
     }
-    #menu-toggle:checked ~ .menu li {
+    #menu-toggle:checked ~ .menu a {
       border: 1px solid #1a0b2e;
       height: 2.5em;
       padding: 0.5em;
       transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+      display: inline;
+      text-align: center;
     }
-    .menu > li {
+    .menu > a  {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -124,7 +135,7 @@ export const Header = styled.header`
       color: white;
       background-color: #11071f;
     }
-    .menu > li:not(:last-child) {
+    .menu >  li:not(:last-child) {
       border-bottom: 1px solid #1a0b2e;
     }
   }
