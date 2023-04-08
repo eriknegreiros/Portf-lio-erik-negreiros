@@ -10,6 +10,7 @@ export const LandingPage = styled.main`
     gap: 20px;
     display: flex;
     flex-direction: column;
+    padding:20px;
   }
 
   .weight {
@@ -26,11 +27,13 @@ export const LandingPage = styled.main`
   }
 
   h2 {
-    font-size: 22px;
+    font-size: 20px;
+    text-align:center;
   }
 
-  p {
+  p{
     font-size: 15px;
+    text-align:center;
   }
 
   .emoji {
@@ -41,10 +44,19 @@ export const LandingPage = styled.main`
     display: none;
   }
 
+  .weight{
+        text-align:center;
+
+  }
+
   @media (min-width: 768px) {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+
+      .div_text {
+    padding:0px;
+  }
 
     @keyframes typewriter {
       from {
@@ -80,6 +92,11 @@ export const LandingPage = styled.main`
       margin-left: 7vw;
       animation: slide-in-blurred-top 0.6s cubic-bezier(0.23, 1, 0.32, 1) both;
     }
+
+    .weight{
+        text-align:left;
+
+  }
 
     h2 {
       margin-top: 170px;
